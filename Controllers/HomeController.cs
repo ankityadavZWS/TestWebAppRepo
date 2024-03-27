@@ -23,6 +23,11 @@ namespace TestWebApp.Controllers
             return View();
         }
 
+        public IActionResult Test()
+        {
+            return Content("Hi , How are you?");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
